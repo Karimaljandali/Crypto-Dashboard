@@ -5,6 +5,7 @@ const Coin = ({data}) => {
       <h2 className="text-xl">{data?.name}</h2>
       <p>Current Price: {data?.current_price}</p>
       <p>24h % Change: <span className={`${data?.price_change_percentage_24h > 0 ? 'text-green-500' : 'text-red-600' }`}>{data?.price_change_percentage_24h.toFixed(2)}%</span></p>
+      <p>ID: {data?.id}</p>
     </div>
   )
 }
