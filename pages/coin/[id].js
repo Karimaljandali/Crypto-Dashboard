@@ -6,7 +6,7 @@ const urlRegex= /.+:\/\//i
 
 const Coin = ({data}) => {
   return (
-    <main className="bg-slate-900 py-20">
+    <main className="bg-slate-900 py-20 flex items-center justify-center min-h-screen bg-gradient-to-r from-cyan-500 to-purple-500 animate-gradient-bg bg-massive">
       <div className="mx-auto px-4 max-w-screen-xl">
         <div className="bg-slate-800 border-2 border-slate-300 text-white rounded-lg min-h-64 w-full p-5">
           <div className="grid gap-2 grid-cols-1 lg:grid-cols-3 ">

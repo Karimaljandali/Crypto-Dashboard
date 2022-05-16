@@ -26,7 +26,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-slate-900 py-20">
+      <main className="bg-slate-900 py-20 bg-gradient-to-r from-slate-900 to-cyan-700 animate-gradient-bg bg-massive">
+        <h1 className="mx-auto text-center text-xl md:text-5xl text-white mb-8">Top 100 Cryptocurrencies by Market Cap</h1>
         <CryptoList coins={coinData} />
       </main>
     </div>
