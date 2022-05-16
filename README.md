@@ -1,5 +1,5 @@
 # Crypto Dashboard
-![Crypto Dashboard Preview](https://media.giphy.com/media/mdiLm8iZ4A07OVIkC9/giphy.gif)  
+![Crypto Dashboard Preview](https://www.kapwing.com/videos/6282c2257297df005806961f)  
 :warning: The Gif above may be slightly hard to read due to video and upload compression.  
 Please view the actual site or download the .mp4 in the repo for a higher quality video.
 ## :wrench: Built using the following tools:
