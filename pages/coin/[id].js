@@ -18,7 +18,7 @@ const Coin = ({data}) => {
                 <span className="uppercase text-xl">({data?.symbol})</span>
               </div>
               <div className="flex items-center space-x-2 font-bold mb-5">
-                <span className="text-6xl">{ConvertCurrency(data?.market_data?.current_price?.usd)}</span>
+                <span className="text-4xl md:text-6xl">{ConvertCurrency(data?.market_data?.current_price?.usd)}</span>
                 <span className={`text-sm ${data?.market_data?.price_change_percentage_24h > 0 ? 'text-green-600' : 'text-red-500'}`}>{data?.market_data?.price_change_percentage_24h?.toFixed(2)}%</span>
               </div>
               {/* Market Data */}
