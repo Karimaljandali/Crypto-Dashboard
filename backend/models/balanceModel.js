@@ -1,6 +1,11 @@
 const mongoose = require('mongoose')
 
 const balanceSchema = mongoose.Schema({
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+        ref: 'Balance'
+    },
     quantity: {
         type: Number,
         required: [true, 'Please add a quantity']
