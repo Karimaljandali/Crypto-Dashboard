@@ -7,8 +7,10 @@ const {
     deleteBalance
 } = require('../controllers/balanceController')
 
-router.route('/').get(getBalance).post(setBalance)
+const { protect } = require('../middleware/authMiddleware')
 
-router.route('/:id').delete(deleteBalance).put(updateBalance)
+router.route('/').get(protect, getBalance).post(protect, setBalance)
+
+router.route('/:id').delete(protect, deleteBalance).put(protect, updateBalance)
 
 module.exports = router
