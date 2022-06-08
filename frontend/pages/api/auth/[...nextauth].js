@@ -37,7 +37,26 @@ export default NextAuth({
         }
     })
   ],
-  session: {
-      jwt: true
+  jwt: {
+      secret: process.env.JWT_SECRET,
+      encryption: true
   },
+  secret: process.env.JWT_SECRET,
+  callbacks: {
+      jwt({ token, user, account }) {
+        if(user) {
+            token.id = user.id
+        }
+
+        return token
+      },
+
+      session({ session, token }) {
+          if(token) {
+              session.id = token.id
+          }
+
+          return session
+      }
+  }
 });
